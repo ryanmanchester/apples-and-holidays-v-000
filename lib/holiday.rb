@@ -83,7 +83,7 @@ def all_holidays_with_bbq(holiday_hash)
       memorial = supply == ["BBQ"] ? holiday
         binding.pry
       
-    end
+    
   end
 
 end
