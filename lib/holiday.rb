@@ -81,7 +81,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, data|
     data.each do |holiday, supply|
       if supply.include?("BBQ")
-        holiday
+        holiday.to_s.split.map &:to_sym
         binding.pry
       end
     end
