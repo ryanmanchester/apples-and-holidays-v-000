@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
       # In order to capitalize both words, you'll need to .split the string
       # into an array and iterate over that array to .capitalize! each word in it. Then, you'll need to .join the array back into a string.
       formatted_holiday = holiday.to_s.split("_").each {|word| word.capitalize!}.join(" ")
-      puts "  #{holiday.to_s.capitalize}: #{supply.join(", ")}"
+      puts "  #{formatted_holiday}: #{supply.join(", ")}"
     end
   end
 end
